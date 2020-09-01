@@ -1,0 +1,104 @@
+{
+   "games": [
+      {
+         "id": 0,
+         "imageUrl": "https://cdn1.epicgames.com/53310576ce1d4446b20dbbdac4f09f2d/offer/EGS_TotalWarSagaTROY_CREATIVEASSEMBLY_S2-1200x1600-4dc6b4bb1c8958b13c60e4346ad31288.jpg",
+         "title": "A Total War Saga: TROY",
+         "devname": "CREATIVE ASSEMBLY | SEGA",
+         "price": 803,
+         "genre": 0,
+         "rating": 4,
+         "date": 2020.08
+      },
+      {
+         "id": 1,
+         "imageUrl": "https://cdn1.epicgames.com/ed55aa5edc5941de92fd7f64de415793/offer/EGS_HITMAN3_IOInteractiveAS_S2-1200x1600-b285fb6eb586113c9479ff33ed646b69.jpg",
+         "title": "HITMAN 3",
+         "devname": "IO Interactive",
+         "price": 245,
+         "genre": 0,
+         "rating": 6,
+         "date": 2021.02
+      },
+      {
+         "id": 2,
+         "imageUrl": "https://cdn1.epicgames.com/56e54e682d614c468e3d5afc54ca0adf/offer/EGS_SUPERHOTMindControlDelete_SUPERHOTTeam_S2-1200x1600-81abefd0c4e79a746c4d99ccf73ef748.jpg",
+         "title": "SUPERHOT: Mind Control Delete",
+         "devname": "SUPERHOT Team",
+         "price": 295,
+         "genre": 1,
+         "rating": 4,
+         "date": 2020.07
+      },
+      {
+         "id": 3,
+         "imageUrl": "https://cdn1.epicgames.com/aster/offer/HEAVYRAIN2-860x1148-1bbec73268268bf6901efc1206f46462-860x1148-1bbec73268268bf6901efc1206f46462.jpg",
+         "title": "Heavy Rain",
+         "devname": "Quantic Dream",
+         "price": 275,
+         "genre": 3,
+         "rating": 2,
+         "date": 2019.1
+      },
+      {
+         "id": 4,
+         "imageUrl": "https://cdn1.epicgames.com/14ee004dadc142faaaece5a6270fb628/offer/EGS_TheWitcher3WildHuntGameoftheYear_CDPROJEKTRED_S2-1200x1600-d887e1b749d11e8876996227e4de5c89.jpg",
+         "title": "The Witcher 3: Wild Hunt - Game of the Year Edition",
+         "devname": "CD PROJEKT RED",
+         "price": 415,
+         "genre": 2,
+         "rating": 8,
+         "date": 2020.12
+      },
+      {
+         "id": 5,
+         "imageUrl": "https://cdn1.epicgames.com/undefined/offer/TheTelltaleBatmanShadowsEdition_Tall-510x680-24368ffb56983936896f0a7d908667ec.jpg",
+         "title": "The Telltale Batman Shadows Edition",
+         "devname": "LCG Entertainment, Inc. | Athlon Games",
+         "price": 580,
+         "genre": 4,
+         "rating": 2,
+         "date": 2017.07
+      },
+      {
+         "id": 6,
+         "imageUrl": "https://cdn1.epicgames.com/epic/offer/RDR2PC1227_Epic%20Games_860x1148-860x1148-b4c2210ee0c3c3b843a8de399bfe7f5c.jpg?h=854&resize=1&w=640",
+         "title": "Red Dead Redemption 2",
+         "devname": "Rockstar Games",
+         "price": 675,
+         "genre": 5,
+         "rating": 9,
+         "date": 2018.08
+      },
+      {
+         "id": 7,
+         "imageUrl": "https://cdn1.epicgames.com/undefined/offer/EGS_SUPERHOTTeam_SUPERHOT_S2-860x1148-9f728adacf17ff5febefcdcbe0d8fd72.jpg",
+         "title": "SUPERHOT",
+         "devname": "SUPERHOT Sp. z.o.o",
+         "price": 450,
+         "genre": 6,
+         "rating": 1,
+         "date": 2020.11
+      },
+      {
+         "id": 8,
+         "imageUrl": "https://cdn1.epicgames.com/3328b08ac1c14540aa265a1a85c07839/offer/hzd_tall-1200x1600-d4b1057afd47f9256d8da71f2f187be4.jpg",
+         "title": "Horizon Zero Dawn™ Complete Edition",
+         "devname": "Guerrilla | Sony Interactive Entertainment",
+         "price": 395,
+         "genre": 7,
+         "rating": 1,
+         "date": 2020.08
+      },
+      {
+         "id": 9,
+         "imageUrl": "https://cdn1.epicgames.com/ff52981b1d9947978153c7a7f8bc6d90/offer/EGS_DiscoElysium_ZAUM_S2-1200x1600-88382e31b39eee25364a29821e2f86e2.jpg",
+         "title": "Disco Elysium",
+         "devname": "ZA/UM",
+         "price": 285,
+         "genre": 8,
+         "rating": 7,
+         "date": 2019.1
+      }
+   ]
+}

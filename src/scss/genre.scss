@@ -1,0 +1,94 @@
+@import 'variables';
+
+.genre {
+   max-width: 100%;
+
+   ul {
+      display: flex;
+      justify-content: center;
+
+      li {
+         margin: 0 10px;
+         padding: 5px 30px;
+
+         font-size: 18px;
+         border-radius: 3px;
+         background-color: $white;
+         box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
+         cursor: pointer;
+         user-select: none;
+
+         &:hover {
+            background-color: $silwhite;
+         }
+
+         &:active {
+            color: $violet;
+         }
+      }
+
+      li.active {
+         color: $violet;
+      }
+   }
+
+   &__popup {
+      display: none;
+      position: absolute;
+      z-index: 20;
+      width: 80%;
+
+      font-size: 18px;
+      background-color: #262626;
+      color: $white;
+      border-radius: 3px;
+      user-select: none;
+
+      .active {
+         color: $violet;
+         background-color: #000;
+
+         &:hover {
+            color: lighten($violet, $amount: 10);
+            background-color: lighten($color: #000000, $amount: 5);
+         }
+      }
+
+      ul {
+         margin: 0;
+         padding: 0;
+
+         li {
+            margin: 0;
+            padding: 10px 30px;
+
+            &:hover {
+               color: $violet;
+               background-color: darken($color: #262626, $amount: 10);
+               cursor: pointer;
+            }
+         }
+      }
+   }
+
+   &__popup,
+   &__popup ul {
+      overflow: hidden;
+   }
+
+   @media (max-width: 1600px) {
+      display: none;
+
+      &__popup {
+         display: block;
+      }
+   }
+
+   @media (max-width: 575px) {
+      display: none;
+
+      &__popup {
+         width: 95%;
+      }
+   }
+}

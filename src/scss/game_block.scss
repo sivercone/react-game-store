@@ -1,0 +1,117 @@
+@import 'variables';
+
+.game_block {
+   margin-bottom: 40px;
+   margin-left: 4%;
+   width: 22%;
+   position: relative;
+
+   border: 2px solid $white;
+   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.05);
+   background-color: $white;
+
+   &:nth-child(4n + 1) {
+      margin-left: 0;
+   }
+
+   &:hover .to_cart {
+      opacity: 1;
+   }
+
+   &:hover img {
+      opacity: 0.2;
+   }
+
+   img {
+      width: 100%;
+   }
+
+   &__title {
+      padding: 10px;
+      display: block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+
+      h3 {
+         width: 100%;
+         text-overflow: ellipsis;
+         white-space: nowrap;
+         overflow: hidden;
+         color: $black;
+      }
+
+      p {
+         margin: 5px 0;
+         text-overflow: ellipsis;
+         white-space: nowrap;
+         overflow: hidden;
+         opacity: 0.8;
+      }
+
+      span {
+         font-size: 18px;
+         color: $black;
+      }
+   }
+
+   .to_cart {
+      width: 90%;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      z-index: 10;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      text-decoration: none;
+      transition: opacity 0.2s ease-in-out;
+
+      &__text {
+         padding: 15px 20px;
+         font-size: 25px;
+         text-transform: uppercase;
+         text-align: center;
+         font-weight: 700;
+         color: $silwhite;
+         background-color: #262626;
+         border-radius: 3px;
+         transition: color 0.2s ease-in-out;
+
+         &:hover {
+            color: $violet;
+         }
+      }
+   }
+
+   @media (max-width: 575px) {
+      width: 45%;
+      margin-left: 10%;
+
+      &:nth-child(2n + 1) {
+         margin-left: 0;
+      }
+
+      &__title {
+         h3 {
+            font-size: 16px;
+         }
+
+         p {
+            font-size: 14px;
+         }
+
+         span {
+            font-size: 16px;
+         }
+      }
+
+      .to_cart {
+         top: 30%;
+         width: 100%;
+
+         &__text {
+            font-size: 15px;
+         }
+      }
+   }
+}

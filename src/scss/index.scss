@@ -1,0 +1,46 @@
+@import 'variables';
+@import 'header';
+@import 'catalog';
+@import 'game_block';
+@import 'sort';
+@import 'genre';
+@import 'button';
+@import 'cart';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+body {
+   margin: 0;
+
+   font-family: 'Roboto', sans-serif;
+   background-color: $silwhite;
+   color: #484848;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+   list-style: none;
+   outline: none;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+   margin: 0;
+   text-decoration: none;
+}
+
+.container {
+   width: 80%;
+   margin: 0 auto;
+
+   @media (max-width: 575px) {
+      width: 95%;
+   }
+}
