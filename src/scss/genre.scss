@@ -13,13 +13,12 @@
 
    .active {
       color: $violet;
-      background-color: #000;
+      background-color: darken($color: #262626, $amount: 5);
       border-radius: 3px;
 
       &:hover {
          color: lighten($violet, $amount: 10);
-         background-color: lighten($color: #000000, $amount: 5);
-         border-radius: 3px;
+         background-color: lighten($color: #000000, $amount: 8);
       }
    }
 
@@ -33,7 +32,7 @@
 
          &:hover {
             color: $violet;
-            background-color: darken($color: #262626, $amount: 10);
+            background-color: darken($color: #262626, $amount: 5);
             border-radius: 3px;
 
             cursor: pointer;

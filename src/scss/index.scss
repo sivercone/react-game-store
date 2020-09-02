@@ -40,6 +40,10 @@ p {
    width: 80%;
    margin: 0 auto;
 
+   @media (max-width: 768px) {
+      width: 90%;
+   }
+
    @media (max-width: 575px) {
       width: 95%;
    }

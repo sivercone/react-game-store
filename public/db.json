@@ -6,9 +6,9 @@
          "title": "A Total War Saga: TROY",
          "devname": "CREATIVE ASSEMBLY | SEGA",
          "price": 803,
-         "genre": 0,
+         "genre": 1,
          "rating": 4,
-         "date": 2020.08
+         "date": 1
       },
       {
          "id": 1,
@@ -16,9 +16,9 @@
          "title": "HITMAN 3",
          "devname": "IO Interactive",
          "price": 245,
-         "genre": 0,
+         "genre": 2,
          "rating": 6,
-         "date": 2021.02
+         "date": 2
       },
       {
          "id": 2,
@@ -28,7 +28,7 @@
          "price": 295,
          "genre": 1,
          "rating": 4,
-         "date": 2020.07
+         "date": 3
       },
       {
          "id": 3,
@@ -38,7 +38,7 @@
          "price": 275,
          "genre": 3,
          "rating": 2,
-         "date": 2019.1
+         "date": 4
       },
       {
          "id": 4,
@@ -48,7 +48,7 @@
          "price": 415,
          "genre": 2,
          "rating": 8,
-         "date": 2020.12
+         "date": 5
       },
       {
          "id": 5,
@@ -58,7 +58,7 @@
          "price": 580,
          "genre": 4,
          "rating": 2,
-         "date": 2017.07
+         "date": 6
       },
       {
          "id": 6,
@@ -68,7 +68,7 @@
          "price": 675,
          "genre": 5,
          "rating": 9,
-         "date": 2018.08
+         "date": 7
       },
       {
          "id": 7,
@@ -78,7 +78,7 @@
          "price": 450,
          "genre": 6,
          "rating": 1,
-         "date": 2020.11
+         "date": 8
       },
       {
          "id": 8,
@@ -86,9 +86,9 @@
          "title": "Horizon Zero Dawn™ Complete Edition",
          "devname": "Guerrilla | Sony Interactive Entertainment",
          "price": 395,
-         "genre": 7,
+         "genre": 5,
          "rating": 1,
-         "date": 2020.08
+         "date": 9
       },
       {
          "id": 9,
@@ -96,9 +96,9 @@
          "title": "Disco Elysium",
          "devname": "ZA/UM",
          "price": 285,
-         "genre": 8,
+         "genre": 4,
          "rating": 7,
-         "date": 2019.1
+         "date": 10
       }
    ]
 }

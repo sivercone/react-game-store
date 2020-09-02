@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Genrepopup = React.memo(function Genrepopup({ genreItems, onClickItem }) {
-   const [activeItem, setActiveItem] = React.useState(0);
+const Genrepopup = React.memo(function Genrepopup({ genreItems, onClickGenre, activeGenre }) {
+   // const [activeGenre, setactiveGenre] = React.useState(0);
    const [visiblePopup, setVisiblePopup] = React.useState(false);
 
    const linkToPopup = React.useRef();
@@ -11,8 +11,7 @@ const Genrepopup = React.memo(function Genrepopup({ genreItems, onClickItem }) {
    };
 
    const onSelectItem = (index) => {
-      setActiveItem(index);
-      onClickItem(index);
+      onClickGenre(index);
       setVisiblePopup(false);
    };
 
@@ -27,7 +26,7 @@ const Genrepopup = React.memo(function Genrepopup({ genreItems, onClickItem }) {
       document.body.addEventListener('click', nonPopupClick);
    }, []);
 
-   const activeLabel = genreItems[activeItem];
+   const activeLabel = genreItems[activeGenre];
 
    return (
       <div ref={linkToPopup}>
@@ -49,7 +48,7 @@ const Genrepopup = React.memo(function Genrepopup({ genreItems, onClickItem }) {
                <ul>
                   {genreItems &&
                      genreItems.map((name, index) => (
-                        <li key={index} onClick={() => onSelectItem(index)} className={activeItem === index ? 'active' : ''}>
+                        <li key={index} onClick={() => onSelectItem(index)} className={activeGenre === index ? 'active' : ''}>
                            {name}
                         </li>
                      ))}

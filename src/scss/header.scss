@@ -49,6 +49,24 @@
       }
    }
 
+   @media (max-width: 1024px) {
+      &__nav {
+         width: 350px;
+      }
+   }
+
+   @media (max-width: 768px) {
+      &__logo {
+         h1 {
+            display: none;
+         }
+      }
+
+      &__nav {
+         display: none;
+      }
+   }
+
    @media (max-width: 575px) {
       padding: 0 10px;
 

@@ -2,7 +2,6 @@
 
 .sort {
    position: relative;
-   width: 200px;
 
    &__label {
       display: flex;
@@ -43,11 +42,11 @@
 
       .active {
          color: $violet;
-         background-color: #000;
+         background-color: darken($color: #262626, $amount: 5);
 
          &:hover {
             color: lighten($violet, $amount: 10);
-            background-color: lighten($color: #000000, $amount: 5);
+            background-color: darken($color: #262626, $amount: 8);
          }
       }
 
@@ -63,7 +62,7 @@
             &:hover {
                color: $violet;
                cursor: pointer;
-               background-color: #000;
+               background-color: darken($color: #262626, $amount: 5);
             }
          }
       }
