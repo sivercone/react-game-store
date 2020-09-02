@@ -24,8 +24,7 @@
       flex-wrap: wrap;
    }
 
-   .--mobile {
-      display: none;
+   .--genre {
       cursor: pointer;
       user-select: none;
 
@@ -40,7 +39,7 @@
    }
 
    @media (max-width: 1600px) {
-      .--mobile {
+      .--genre {
          display: flex;
       }
    }
@@ -48,7 +47,7 @@
    @media (max-width: 575px) {
       margin: 25px 0;
 
-      .--mobile {
+      .--genre {
          display: flex;
       }
 

@@ -1,25 +1,26 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
+import axios from 'axios';
+import { useDispatch } from 'react-redux';
 
 import './scss/index.scss';
-import Catalog from './pages/Catalog';
-import Cart from './pages/Cart';
+import { Header } from './components/index';
+import { Catalog, Cart } from './pages/index';
+import { setGames } from './redux/actions/games';
 
 function App() {
-   const [games, setGames] = React.useState([]);
+   const dispatch = useDispatch();
 
    React.useEffect(() => {
-      fetch('http://localhost:3000/db.json')
-         .then((resp) => resp.json())
-         .then((json) => {
-            setGames(json.games);
-         });
+      axios.get('http://localhost:3001/games').then(({ data }) => {
+         dispatch(setGames(data));
+      });
    }, []);
 
    return (
       <div>
-         {/* <Route path="/" component={Catalog} exact /> */}
-         <Route path="/" render={() => <Catalog items={games} />} exact />
+         <Header />
+         <Route path="/" component={Catalog} exact />
          <Route path="/cart" component={Cart} exact />
       </div>
    );
