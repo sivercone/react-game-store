@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Genrepopup = React.memo(function Genrepopup({ genreItems, onClickGenre, activeGenre }) {
-   // const [activeGenre, setactiveGenre] = React.useState(0);
    const [visiblePopup, setVisiblePopup] = React.useState(false);
 
    const linkToPopup = React.useRef();

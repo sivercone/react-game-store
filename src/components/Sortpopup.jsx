@@ -3,11 +3,9 @@ import PropTypes from 'prop-types';
 
 const Sortpopup = React.memo(function Sortpopup({ sortItems, activeSort, onClickSort }) {
    const [visiblePopup, setVisiblePopup] = React.useState(false);
-   // const [activeItem, setActiveItem] = React.useState(0);
 
    const linkToSort = React.useRef();
    const activeLabel = sortItems.find((obj) => obj.type === activeSort).name;
-   // const activeLabel = '';
 
    const toggleVisiblePopup = () => {
       setVisiblePopup(!visiblePopup);
@@ -28,8 +26,6 @@ const Sortpopup = React.memo(function Sortpopup({ sortItems, activeSort, onClick
    React.useEffect(() => {
       document.body.addEventListener('click', nonPopupClick);
    }, []);
-
-   // const activeLabel = sortItems[activeSort].name;
 
    return (
       <div className="sort" ref={linkToSort}>

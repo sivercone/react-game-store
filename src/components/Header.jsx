@@ -1,7 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 function Header() {
+   const { totalCount } = useSelector(({ cart }) => ({
+      totalCount: cart.totalCount,
+   }));
+
    return (
       <header className="header">
          <div className="header__align">
@@ -46,7 +51,7 @@ function Header() {
                            strokeLinecap="round"
                            strokeLinejoin="round"></path>
                      </svg>
-                     <span>3</span>
+                     <span>{totalCount}</span>
                   </button>
                </div>
             </Link>

@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Sortpopup, Genrepopup, GameBlock, LoadingBlock } from '../components/index';
 import { setGenre, setSortBy } from '../redux/actions/filters';
 import { fetchGames } from '../redux/actions/games';
+import { addGameToCart, removeCartItem } from '../redux/actions/cart';
 
 const genreNames = ['All games', 'Action', 'Adventure', 'Racing', 'RPG', 'Shooter', 'Survival'];
 const sortNames = [
@@ -18,6 +19,7 @@ function Catalog() {
    const items = useSelector(({ games }) => games.items);
    const isLoaded = useSelector(({ games }) => games.isLoaded);
    const { genre, sortBy } = useSelector(({ filters }) => filters);
+   const cartItems = useSelector(({ cart }) => cart.items);
 
    React.useEffect(() => {
       dispatch(fetchGames(genre, sortBy)); // запрос бд
@@ -30,6 +32,14 @@ function Catalog() {
    const onSelectSort = React.useCallback((type) => {
       dispatch(setSortBy(type));
    }, []);
+
+   const onGameToCart = (obj) => {
+      dispatch(addGameToCart(obj));
+   };
+
+   const onRemoveCartItem = (id) => {
+      dispatch(removeCartItem(id));
+   };
 
    return (
       <div className="catalog">
@@ -44,7 +54,17 @@ function Catalog() {
 
             <div className="catalog__content">
                {isLoaded
-                  ? items.map((obj) => <GameBlock key={obj.id} {...obj} />)
+                  ? items.map((obj) => (
+                       <GameBlock
+                          key={obj.id}
+                          {...obj}
+                          gameToCart={onGameToCart}
+                          addedCount={cartItems[obj.id] && cartItems[obj.id].items.length}
+                          onRemove={onRemoveCartItem}
+                          genreItems={genreNames}
+                          itemGenre={obj.genre}
+                       />
+                    ))
                   : Array(8)
                        .fill(0)
                        .map((_, index) => <LoadingBlock key={index} />)}

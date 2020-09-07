@@ -81,6 +81,19 @@
             color: $violet;
          }
       }
+
+      .--remove:hover {
+         color: tomato;
+      }
+   }
+
+   @media (max-width: 1024px) {
+      .to_cart {
+         &__text {
+            padding: 15px 10px;
+            font-size: 18px;
+         }
+      }
    }
 
    @media (max-width: 768px) {
@@ -130,15 +143,6 @@
 
          span {
             font-size: 16px;
-         }
-      }
-
-      .to_cart {
-         top: 30%;
-         width: 100%;
-
-         &__text {
-            font-size: 15px;
          }
       }
    }
