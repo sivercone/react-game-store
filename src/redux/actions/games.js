@@ -8,11 +8,9 @@ export const setLoaded = (payload) => ({
 export const fetchGames = (genre, sortBy) => (dispatch) => {
    dispatch(setLoaded(false));
 
-   axios
-      .get(`http://localhost:3001/games?${genre !== 0 ? `genre=${genre}` : ''}&_sort=${sortBy.type}&_order=${sortBy.order}`)
-      .then(({ data }) => {
-         dispatch(setGames(data));
-      });
+   axios.get(`/games?${genre !== 0 ? `genre=${genre}` : ''}&_sort=${sortBy.type}&_order=${sortBy.order}`).then(({ data }) => {
+      dispatch(setGames(data));
+   });
 };
 
 export const setGames = (items) => ({
