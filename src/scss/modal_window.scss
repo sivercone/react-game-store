@@ -1,6 +1,7 @@
 @import 'variables';
 
 .modal_bg {
+   z-index: 100;
    top: 0;
    left: 0;
    z-index: 99;
@@ -39,5 +40,15 @@
 
    &__buttons {
       margin: 0 auto;
+   }
+}
+
+@media (max-width: 768px) {
+   .modal_window {
+      width: 90%;
+
+      &__content {
+         padding: 0 25px;
+      }
    }
 }

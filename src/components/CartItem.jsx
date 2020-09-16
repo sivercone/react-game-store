@@ -11,7 +11,7 @@ function CartItem({ id, imageUrl, title, price, genre, onRemove }) {
    return (
       <div className="cart__item">
          {displayModal ? <ModalWindow id={id} onRemove={onRemove} toggle={toggleModal} /> : ''}
-         <img className={displayModal ? 'active' : ''} src={imageUrl} alt="" />
+         <img src={imageUrl} alt="" />
          <div className="cart__titles--mobile">
             <span className="cart__title--mobile">{title}</span>
             <span className="cart__genre--mobile">{genre}</span>
